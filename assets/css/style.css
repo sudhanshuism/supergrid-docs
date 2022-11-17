@@ -1,0 +1,344 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: Maven-Pro;
+    src: url("../fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf");
+}
+h1,h2,h3,h4,h5,h6,p,i,span,b,div{
+    font-family: 'Maven-Pro';
+}
+.supergrid-doc{
+    margin: 0;
+    padding: 0;
+}
+.supergrid-doc .navbar{
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+}
+.supergrid-doc .navbar .nav-link{
+    font-size: 16px !important;
+}
+.supergrid-doc .navbar-brand .website-logo{
+    width: 100px;
+}
+.btn-supergrid-info{
+    border: 1px solid skyblue;
+    color: skyblue;
+    background-color: white;
+}
+.btn-supergrid-info:hover{
+    border: 1px solid skyblue;
+    color: black;
+    background-color: skyblue;
+}
+.supergrid-doc .myPage .hero-intro{
+    position: relative;
+    background-color: #6495ED;
+    height: 450px;
+
+}
+.supergrid-doc .supergrid-container {
+    box-shadow: 0px 0px 5px 5px rgb(212, 212, 212);
+}
+.supergrid-doc .myPage .hero-intro .intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 80%;
+}
+.supergrid-doc .myPage .hero-intro .intro h2{
+   font-size: 40px;
+    color: white;
+    margin-bottom: 0;
+
+}
+.supergrid-doc .myPage .hero-intro .intro p{
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.supergrid-doc .myPage .grid-table{
+    background-color: #ffffff;
+}
+.supergrid-doc .myPage .hero-intro .intro .btn-dark{
+    border-radius: 0px;
+    margin-top: 10px;
+}
+.supergrid-doc .myPage .hero-intro{
+    text-align: center;
+    height: 100%;
+    font-family: 'Roboto-Regular';
+}
+.supergrid-doc .why-us{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #6495ED;
+}
+.supergrid-doc .why-us .why-container{
+    text-align: center;
+}
+.supergrid-doc .why-us .why-container p{
+    margin-bottom: 0;
+}
+.supergrid-doc .why-us .why-container .why-text{
+    color: white;
+    font-size: 20px;
+}
+.supergrid-doc .why-us .why-container .fa-solid{
+    font-size: 100px;
+    color: white;
+}
+.supergrid-doc .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #E6E6E6;
+}
+.supergrid-doc .features .features-heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.supergrid-doc .features .feature{
+    margin-top: 50px;
+}
+.supergrid-doc .features .feature .fa-solid{
+    color: #6495ED;
+    font-size: 30px;
+}
+.supergrid-doc .features .feature .col-11{
+    padding-left: 20px;
+}
+.supergrid-doc .features .feature .col-11 h5,
+.supergrid-doc .features .feature .col-11 p{
+    width: 100%;
+    margin-top: -4px
+}
+.supergrid-doc .features .feature .col-11 h5{
+    font-weight: 600;
+    font-size: 20px;
+}
+.supergrid-doc .footer{
+    min-height: 100px;
+    background-color: #6495ED;
+    padding-top: 35px;
+}
+.supergrid-doc .footer .row{
+    justify-content: center;
+    align-items: center;
+}
+
+.supergrid-doc .footer a{
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    text-align: justify;
+    font-size: 16px;
+}
+.supergrid-doc .footer a:hover{
+    text-decoration: dashed !important;
+}
+.supergrid-doc .footer .col-md-4 a{
+    text-align: right;
+    
+}
+.supergrid-doc .installation{
+    background-color: black;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.supergrid-doc .installation .cdn-container{
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+}
+.supergrid-doc .installation .heading{
+    text-align: center;
+    color: white;
+}
+.supergrid-doc .installation .cdn-container .col-1,
+.supergrid-doc .installation .cdn-container .col-11{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.supergrid-doc .installation .cdn-container .col-11{
+    padding-left: 30px;
+
+}
+.supergrid-doc .installation .cdn-container .col-1{
+    background-color: #6495ED;
+}
+.supergrid-doc .installation .cdn-container .col-1 .icon{
+    text-align: center;
+}
+.supergrid-doc .installation .cdn-container .col-1 .icon
+.fa-brands{
+    font-size: 28px;
+}
+
+.supergrid-doc .installation .cdn-container{
+    margin-top: 40px;
+}
+.supergrid-doc .installation .cdn-container .copy-tab{
+    background-color: #95A5A6;
+    text-align: center;
+}
+.supergrid-doc .installation .cdn-container .copy-tab:hover{
+    background-color: #717D7E;
+    color: white;
+}
+.supergrid-doc .installation .cdn-container .copy-tab
+.copy{
+    padding-top: 5px;
+    cursor: pointer;
+}
+.supergrid-doc .installation .cdn-container .copy-tab
+.fa-regular{
+    font-size: 20px;
+}
+.supergrid-doc .installation .cdn-container .copy-tab .copied-text{
+    font-size: 12px;
+    color: black;
+}
+.supergrid-doc .installation .cdn-container .col-10 .link{
+    padding-top: 15px;
+    overflow-x: auto;
+}
+.supergrid-doc .installation .cdn-container .col-10 .link::-webkit-scrollbar{
+    height: 5px;
+    background-color: white;
+}
+.supergrid-doc .installation .cdn-container .col-10 .link::-webkit-scrollbar-thumb{
+    height: 5px;
+    background-color: black;
+}
+
+.supergrid-doc .page-heading{
+    background-color: #6495ED;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.supergrid-doc .page-heading h1{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+.supergrid-doc .docs{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.supergrid-doc .docs .index-list{
+    height: 100%;
+    overflow-y: auto;
+    position: sticky;
+    left:0;
+    top:0;
+}
+.supergrid-doc .docs .index-list-group{
+    color:#6495ED;
+    font-weight: 600;
+}
+.supergrid-doc .docs .index-list::-webkit-scrollbar{
+    width: 10px;
+}
+.supergrid-doc .docs .index-list::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: #717D7E;
+}
+.supergrid-doc .docs .index-list ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+.supergrid-doc .docs .index-list ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+.supergrid-doc .docs .index-list ul li:hover{
+    font-weight: 600;
+}
+.supergrid-doc .hashtag{
+    color: #6495ED;
+}
+.supergrid-doc .hashtag-pink{
+    color: #d63384;
+    
+}
+
+.supergrid-doc .docs-section-heading{
+    font-size: 28px;
+}
+.supergrid-doc .docs-section-desc{
+    font-size: 20px;
+    color: #787878;
+}
+.supergrid-doc .fiddle-container{
+    border: 1px solid black;
+    height: 400px;
+    overflow-y:auto;
+    margin-bottom: 40px;
+}
+.supergrid-doc .code-snippet{
+    border: 1px solid black;
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.supergrid-doc .code-snippet::-webkit-scrollbar, .supergrid-doc .fiddle-container::-webkit-scrollbar{
+    width: 10px;
+}
+.supergrid-doc .code-snippet::-webkit-scrollbar-thumb,.supergrid-doc .fiddle-container::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #717D7E;
+}
+
+.supergrid-doc .spacer-t{
+    margin-top: 30px;
+}
+.supergrid-doc .hilighted-option{
+    border: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 50px 50px rgba(100, 149, 237,0.5) inset;
+    
+}
+.supergrid-doc .go-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6495ED;
+    padding: 12px;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+.supergrid-doc .go-to-top p{
+    margin-bottom: 0;
+}
+.supergrid-doc .go-to-top p .fa-regular{
+    font-size: 24px;
+    color: white;
+}
+
+.supergrid-doc .quick-setup .quick-setup-links{
+    background-color: #95A5A6;
+    padding: 50px;
+}
+.supergrid-doc .help{
+    padding: 50px;
+}
+.supergrid-doc .help .help-links{
+    background-color: #c5c5c5;
+    padding: 50px;
+}
+.supergrid-doc .help .help-links .fa-envelope{
+    color: #6495ED;
+}
+.supergrid-doc .help .help-links .copied-text{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #6495ED;
+}
