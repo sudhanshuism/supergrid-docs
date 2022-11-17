@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/supergrid-icon.png"/>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/supergrid.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./src/supergrid.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/sudhanshuism/supergrid@1.0.0/supergrid.js"></script> -->
+    <script src="./assets/testData/data.js"></script>
+
+    <title>SuperGrid</title>
+</head>
+<body>
+    <div class="supergrid-doc">
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/">
+                <img class="website-logo" src="./assets/images/supergrid-icon-sm-trans.png"/>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/#installation">Installation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/quickSetup.html">Quick Setup</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="documentation.html">Documentation</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Version
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">1.0.0</a></li>
+                      <li><a class="dropdown-item" href="#">Upcoming Features</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/help.html" tabindex="-1" aria-disabled="true">Help</a>
+                  </li>
+                </ul>
+                
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+            </div>
+          </nav>
+        <section>
+            <div class="myPage container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="hero-intro">
+                          <div class="intro">
+                            <p>Welcome to <u>Supergrid</u></p>
+                            <h2>It's a Table with superpowers</h2>
+                            <p>and, It's FREE</p>
+                            <a href="/documentation.html"><button type="button" class="btn btn-dark btn-md">Get Started</button></a>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-8">
+                        <div class="grid-table">
+                            <table id="testGrid"></table>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>                    
+        </section>
+        <section>
+          <div class="why-us container-fluid mt-5">
+            <div class="row">
+              <div class="col">
+                <div class="why-container">
+                  <p><i class="fa-solid fa-table"></i></p>
+                  <p class="why-text">Flexible</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="why-container">
+                  <p><i class="fa-solid fa-bolt"></i></p>
+                  <p class="why-text">Powerful</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="why-container">
+                  <p><i class="fa-solid fa-gears"></i></p>
+                  <p class="why-text">Customizable</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="features">
+            <h2 class="features-heading">Features</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="feature row">
+                    <div class="col-1">
+                      <i class="fa-solid fa-table"></i>
+                    </div>
+                    <div class="col-11">
+                      <h5 >Multiple data formats</h5>
+                      <p>It supports array, Json, xml formats</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="feature row">
+                    <div class="col-1">
+                      <i class="fa-solid fa-table"></i>
+                    </div>
+                    <div class="col-11">
+                      <h5 >Frozen/Sticy Rows and Columns</h5>
+                      <p>Easily freeze first x columns or the
+                        header of the grid</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="feature row">
+                    <div class="col-1">
+                      <i class="fa-solid fa-table"></i>
+                    </div>
+                    <div class="col-11">
+                      <h5 >Pager</h5>
+                      <p>Navigate across the the grid 
+                        with handy pager</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="feature row">
+                    <div class="col-1">
+                      <i class="fa-solid fa-table"></i>
+                    </div>
+                    <div class="col-11">
+                      <h5 >Row Numbering</h5>
+                      <p>It has option to number the rows
+                        across the table</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="feature row">
+                    <div class="col-1">
+                      <i class="fa-solid fa-table"></i>
+                    </div>
+                    <div class="col-11">
+                      <h5 >Multiple row selection</h5>
+                      <p>With handy checkbox, you can select
+                        as many rows as you want</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="feature row">
+                    <div class="col-1">
+                      <i class="fa-solid fa-table"></i>
+                    </div>
+                    <div class="col-11">
+                      <h5 >Scroller</h5>
+                      <p>Supercool scroller buttons for 
+                        horizontal scrolling</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="feature row">
+                    <div class="col-1">
+                      <i class="fa-solid fa-table"></i>
+                    </div>
+                    <div class="col-11">
+                      <h5 >Form input options
+                      </h5>
+                      <p>Don’t just display data, take inputs 
+                        as well with built-in form capabilities</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="feature row">
+                    <div class="col-1">
+                      <i class="fa-solid fa-table"></i>
+                    </div>
+                    <div class="col-11">
+                      <h5 >Column Resizability</h5>
+                      <p>You can enable the option to resize 
+                        the columns</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="feature row">
+                    <div class="col-1">
+                      <i class="fa-solid fa-table"></i>
+                    </div>
+                    <div class="col-11">
+                      <h5 >Formatter for data</h5>
+                      <p>You can format your data to 
+                        look like they way you want</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Installation-->
+        <section id="installation">
+          <div class="installation">
+              <h2 class="heading">Installation</h2>
+              <div class="cdn-container">
+                <div class="row">
+                  <div class="col-1">
+                    <div class="icon css">
+                      <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                  </div>
+                  <div class="col-10">
+                    <div class="link css">
+                      <p>https://cdn.jsdelivr.net/gh/sudhanshuism/supergrid@main/assets/css/supergrid.css</p>
+                    </div>
+                  </div>
+                  <div class="col-1 copy-tab">
+                    <div class="copy" onclick="copyCSSLink()">
+                      <i class="fa-regular fa-copy"></i>
+                      <span class="copied-text">Copied!</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cdn-container">
+                <div class="row">
+                  <div class="col-1">
+                    <div class="icon js">
+                      <i class="fa-brands fa-js"></i>
+                    </div>
+                  </div>
+                  <div class="col-10">
+                    <div class="link js">
+                      <p>https://cdn.jsdelivr.net/gh/sudhanshuism/supergrid@main/supergrid.js</p>
+                    </div>
+                  </div>
+                  <div class="col-1 copy-tab">
+                    <div class="copy" onclick="copyJsLink()">
+                      <i class="fa-regular fa-copy"></i>
+                      <span class="copied-text">Copied!</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <!--Footer-->
+        <footer>
+          <div class="footer">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <a href="#"><div>Home</div></a>            
+                </div>
+                <div class="col-md-2">
+                  <a href="#"><div>Documentation</div></a>            
+                </div>
+                <div class="col-md-2">
+                  <a href="#"><div>Version</div></a>            
+                </div>
+                <div class="col-md-2">
+                  <a href="#"><div>Help</div></a>            
+                </div>
+                <div class="col-md-4">
+                  <a href="#"><div><i class="fa-brands fa-github"></i></div></a>            
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        
+    
+        
+      </div>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+      $(".copy-tab .copied-text").hide();
+    })
+
+    function copyCSSLink (){
+      let link = $(".link.css p").text();
+      navigator.clipboard.writeText(link);
+
+      $(".copy-tab .copied-text:eq(0)").show();
+      setTimeout(function(){
+        $(".copy-tab .copied-text:eq(0)").hide();
+      },1000);
+    }
+
+    function copyJsLink (){
+      let link = $(".link.js p").text();
+      navigator.clipboard.writeText(link);
+
+      $(".copy-tab .copied-text:eq(1)").show();
+      setTimeout(function(){
+        $(".copy-tab .copied-text:eq(1)").hide();
+      },1000);
+    }
+    
+    let myData = data;
+    // console.log(myData)
+    //$.fn.superGrid.defaults.rowsPerPage = 13;
+    $("#testGrid").superGrid({
+        theme:"bootstrap5",
+        defaultMsg: "There's no data to show",
+        stickyHeader:true,  
+        stickyCols: 3,
+        scroller: true,
+        scrollSpeed: 100,
+        pager: true,
+        rowsPerPage: 10,
+        rowNumbering: true,
+        multiSelect: true,
+        dataType:"local",
+        data:myData,
+        colModel:[
+            //{name: "id",label:"ID", width:"50", hidden:false, resizable:true},
+            {name:"name",label:"Full Name",width:"150",  colDataType:"plainText",resizable: true, formatter: linkiFy},
+            {name:"age",label:"Age",  colDataType:"plainText"},
+            {name: "gender",label:"Gender",  colDataType:"form", formInputType:"select",selectOptions:["Male", "Female"],width:"80"},
+            {name:"dob",label:"Date of Birth",  colDataType:"form", formInputType:"date"},
+            {name:"doj",label:"Date of Joining", width:"80", colDataType:"plainText"},
+            {name:"project",label:"Project",  colDataType:"plainText"},
+            {name:"isReporting",label:"Is Reporting? ",  colDataType:"plainText", hidden: false},
+            {name:"rrtid",label:"RRT ID",  colDataType:"plainText", hidden: false},
+            {name:"projStartDate",label:"Project Start Date",  colDataType:"plainText", hidden: false},
+            {name:"clientName",label:"Client Name",  colDataType:"plainText", hidden: false},
+            {name:"functions",label:"Functions",  colDataType:"plainText", hidden: false},
+            {name:"primarySkill",label:"Primary Skill", width:"250",  colDataType:"plainText", hidden: false},
+            {name:"comment",label:"Comment",  colDataType:"form", formInputType:"textarea", hidden: false},
+        ]
+            
+    });
+
+
+    function linkiFy(value){
+        return  "<a href='#'>"+ value + "</a>";
+    }
+
+
+    
+</script>

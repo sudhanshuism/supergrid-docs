@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/supergrid-icon.png"/>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/supergrid.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./src/supergrid.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/sudhanshuism/supergrid@1.0.0/supergrid.js"></script> -->
+    <script src="./assets/testData/data.js"></script>
+
+    <title>SuperGrid</title>
+</head>
+<body>
+    <div class="supergrid-doc">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                <img class="website-logo" src="./assets/images/supergrid-icon-sm-trans.png"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/#installation">Installation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/quickSetup.html">Quick Setup</a>
+                      </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/documentation.html">Documentation</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Version
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">1.0.0</a></li>
+                        <li><a class="dropdown-item" href="#">Upcoming Features</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/help.html" tabindex="-1" aria-disabled="true">Help</a>
+                    </li>
+                </ul>
+                
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Heading -->
+        <section>
+            <div class="page-heading">
+                <h1>Documentation</h1>
+            </div>
+        </section>
+        <div class="docs">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <aside>
+                            <div class="index-list">
+                                <ul>
+                                    <li class="index-list-group"><a href="/documentation.html">Get Started</a></li>
+                                    <li><a data-sg-target="introduction" href="/documentation.html#introduction">Introduction</a></li>
+                                    <li><a data-sg-target="quickSetup" href="/documentation.html#quickSetup">Quick Setup</a></li>
+                                    <li class="index-list-group"><a  href="/documentation.html#options">Options</a></li>
+                                    <li><a data-sg-target="theme" href="/documentation.html#theme">theme</a></li>
+                                    <li><a data-sg-target="stickyHeader" href="/documentation.html#stickyHeader">stickyHeader</a></li>
+                                    <li><a data-sg-target="stickyCols" href="/documentation.html#stickyCols">stickyCols</a></li>
+                                    <li><a data-sg-target="scroller" href="/documentation.html#scroller">scroller</a></li>
+                                    <li><a data-sg-target="scrollSpeed" href="/documentation.html#scrollSpeed">scrollSpeed</a></li>
+                                    <li><a data-sg-target="pager" href="/documentation.html#pager">pager</a></li>
+                                    <li><a data-sg-target="rowsPerPage" href="/documentation.html#rowsPerPage">rowsPerPage</a></li>
+                                    <li><a data-sg-target="rowNumbering" href="/documentation.html#rowNumbering">rowNumbering</a></li>
+                                    <li><a data-sg-target="multiSelect" href="/documentation.html#multiSelect">multiSelect</a></li>
+                                    <li><a data-sg-target="colModel" href="/documentation.html#colModel">colModel</a></li>
+                                    <li><a data-sg-target="name" href="/documentation.html#name">name</a></li>
+                                    <li><a data-sg-target="label" href="/documentation.html#label">label</a></li>
+                                    <li><a data-sg-target="width" href="/documentation.html#width">width</a></li>
+                                    <li><a data-sg-target="colDataType" href="/documentation.html#colDataType">colDataType</a></li>
+                                    <li><a data-sg-target="formInputType" href="/documentation.html#formInputType">formInputType</a></li>
+                                    <li><a data-sg-target="selectOptions" href="/documentation.html#selectOptions">selectOptions</a></li>
+                                    <li><a data-sg-target="hidden" href="/documentation.html#hidden">hidden</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 id="introduction"> <span class="hashtag">#</span> <span class="docs-section-heading">Introduction</span></h2>
+                        <h4 class="docs-section-desc">A brief overview of SuperGrid</h4>
+                        <p>
+                            SuperGrid is a jQuery plugin that provides functionality to display and manipulate tabular data on the web.
+                            With a lesser number of parameters and more functionality, it is one of the best jquery Grid/Table plugins. <br>
+                            The first version (1.0.0) support only "array of objects" data available locally.
+                            <br><br>
+                            Below are the steps to get you started -<br>
+                            <ul>
+                                <li>Write a table tag with a unique id</li>
+                                <li>import all the necessary dependencies (jQuery, Bootstrap, Font Awesome)</li>
+                                <li>Call supergrid plugin for your table to create a grid</li>
+                            </ul>
+                            Look at the examples below to understand it better.
+                        </p>
+                        <!--Basic SuperGrid Demo-->
+                        <div class="fiddle-container">
+                            <script async src="//jsfiddle.net/supergrid/t2va0x1e/10/embed/js,html,result/"></script>
+                        </div>
+                        <h4 class="docs-section-desc">Explanation</h4>
+                        <p>
+                            1. Let's say you have a table with id <b>"testGrid"</b> in which you want populate the data that you have available locally in the file data.js. 
+                            <p class="code-snippet">
+                                <code class="language-markup">
+                                    &lt;table id="testGrid"&gt;  &lt;/table&gt;
+                                </code>
+                            </p>
+                            
+                            2. The file data.js contains an array of objects. <br>
+                            Here's an example- 
+                            <p class="code-snippet">
+                                <code class="language-javascript">
+                                    const data = [ <br>
+                                        { <br>
+                                            &nbsp; id:0, <br>
+                                            &nbsp; name:"Sudhanshu Kumar", <br>
+                                            &nbsp; age: "25", <br>
+                                            &nbsp; gender:"male", <br>
+                                            &nbsp; dob: "18/03/1997", <br>
+                                            &nbsp; doj: "2021-10-10", <br>
+                                            &nbsp; project: "Enterprise Systems", <br>
+                                            &nbsp; isReporting: "Shubhangi Shinde", <br>
+                                            &nbsp; rrtid: "232323", <br>
+                                            &nbsp; projStartDate: "10/10/2021", <br>
+                                            &nbsp; clientName: "Enterprise Systems", <br>
+                                            &nbsp; functions: "Designer", <br>
+                                            &nbsp; primarySkill: "HTML, CSS, BOOTSTRAP, JAVASCRIPT, PHP, SQL, JAVASCRIPT", <br>
+                                            &nbsp; comment: "Hello World" <br>
+                                        },<br>
+                                        {<br>
+                                            &nbsp; id:1,<br>
+                                            &nbsp; name:"Sachin Kumar",<br>
+                                            &nbsp; age: "25",<br>
+                                            &nbsp; dob: "18/03/1997", <br>
+                                            &nbsp; doj: "23/04/2021", <br>
+                                            &nbsp; project: "Enterprise Systems", <br>
+                                            &nbsp; isReporting: "Shubhangi Shinde", <br>
+                                            &nbsp; rrtid: "232323", <br>
+                                            &nbsp; projStartDate: "10/10/2021", <br>
+                                            &nbsp; clientName: "Enterprise Systems", <br>
+                                            &nbsp; functions: "Designer", <br>
+                                            &nbsp; primarySkill: "HTML, CSS, BOOTSTRAP, JAVASCRIPT, PHP, SQL, JAVASCRIPT, JAVASCRIPT, PHP, SQL, JAVASCRIPT", <br>
+                                            &nbsp; comment: "Hello World" <br>
+                                        },<br>
+                                    ]
+
+                                </code>
+                            </p>
+                            3. Then we initialized the supergrid plugin for the table we just created.<br> 
+                            <p class="code-snippet">
+                                <code class="language-javascript">
+                                    $("#testGrid").superGrid({<br>
+                                        &nbsp; dataType: "local", <br>
+                                        &nbsp; data: myData, <br>
+                                        &nbsp; colModel: {<br>
+                                            &nbsp; &nbsp;..... <br>
+                                            &nbsp; &nbsp;.....<br>
+                                        &nbsp; }<br>
+                                    })
+                                </code>
+                            </p>
+                        </p>
+
+                        <!--Options-->
+                        <h2 id="options"> <span class="hashtag">#</span> <span class="docs-section-heading">Options</span></h2>
+                        <h4 class="docs-section-desc">Use options to make your grid come alive</h4>
+                        <p>Options are key-value pairs that can be used to enable or disable a SuperGrid feature on you table.
+                            Below are the list of options available in this version of SuperGrid.
+                        </p>
+                        <!--Option: theme-->
+                        <h5 id="theme"><span class="hashtag-pink">#</span> theme</h5>
+                        Theme option is responsible for the appearance of the grid. By default, it uses Bootstrap5 theme and that's the 
+                        only theme available for his version.
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                theme: "bootstrap5"
+                            </code>
+                        </p>
+                        <!--Option: stickyHeader-->
+                        <h5 id="stickyHeader" class="spacer-t"><span class="hashtag-pink">#</span> stickyHeader</h5>
+                        <p>
+                            Sticky Header can be used to fix the table header to the top of the container. Rest of the content in the body 
+                            can scroll horizontally or vertically. 
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                stickyHeader: true,  // boolean
+                            </code>
+                        </p>
+
+                        <!--Option: stickyCols-->
+                        <h5 id="stickyCols" class="spacer-t"><span class="hashtag-pink">#</span> stickyCols</h5>
+                        <p>
+                            This option can be used to freeze/fix/stick first x columns from left
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                stickyCols: 2,  // number of rows from left to freeze- default value 0
+                            </code>
+                        </p>
+
+                        <!--Option: scroller-->
+                        <h5 id="scroller" class="spacer-t"><span class="hashtag-pink">#</span> scroller</h5>
+                        <p>
+                            Scroller is a sticky left and right buttons in the grid which help us scroll horizontally when 
+                            there are too many columns in the grid. <a href="/">Demo</a><br>
+                            <i>Note: </i> It is recommended to use scroller with <b>sticky columns enabled </b> for the best experience.
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                scroller: true,  // boolean 
+                            </code>
+                        </p>
+
+                        <!--Option: scrollSpeed-->
+                        <h5 id="scrollSpeed" class="spacer-t"><span class="hashtag-pink">#</span> scrollSpeed</h5>
+                        <p>
+                            It is a numberical value that tells scroller to scroll horizontally given number of pixels per click.
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                scrollSpeed: 100,  // number 
+                            </code>
+                        </p>
+
+                        <!--Option: pager-->
+                        <h5 id="pager" class="spacer-t"><span class="hashtag-pink">#</span> pager </h5>
+                        <p>
+                            Pager is a navigation panel that sticks to the bottom of the table when enabled. 
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                pager: true  // boolean 
+                            </code>
+                        </p>
+
+                        <!--Option: rowsPerPage-->
+                        <h5 id="rowsPerPage" class="spacer-t"><span class="hashtag-pink">#</span> rowsPerPage </h5>
+                        <p>
+                            This option lets you specify the number of rows that you want to display at a time in the grid. <br> 
+                            <i>Note:</i> This option works only when pager is enabled.
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                rowsPerPage: 10  // Number 
+                            </code>
+                        </p>
+
+                        <!--Option: rowNumbering-->
+                        <h5 id="rowNumbering" class="spacer-t"><span class="hashtag-pink">#</span> rowNumbering </h5>
+                        <p>
+                            Enabling this option assigns number to each row in the first column in increasing order starting from 1.
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                rowNumbering: true  // boolean 
+                            </code>
+                        </p>
+
+                        <!--Option: multiSelect-->
+                        <h5 id="multiSelect" class="spacer-t"><span class="hashtag-pink">#</span> multiSelect </h5>
+                        <p>
+                            This option provides us with the feature to select multiples rows by adding a checkbox in the first column. 
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                multiSelect: true  // boolean 
+                            </code>
+                        </p>
+
+                        
+
+
+                        <!--Option: colModel-->
+                        <h5 id="colModel" class="spacer-t"><span class="hashtag-pink">#</span> colModel </h5>
+                        <p>
+                             This is an array that take objects. Each object inside this array represents a column. Inside those objects you can define the properties of each 
+                             column individually. <br>
+                             Adding two properties <code>name</code> and <code>label</code> is mandatory for the grid to work. <br>
+                             Let's understand each <code>colModel</code> property individually below.
+                             
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                colModel: [{ <br>
+                                    &nbsp ..... <br>
+                                    &nbsp ..... <br>
+                                }]  // array 
+                            </code>
+                        </p>
+
+                        <!--Option: colModel - name -->
+                        <h5 id="name" class="spacer-t"><span class="hashtag-pink">#</span> name </h5>
+                        <p>
+                             This is a colModel property that takes the key of your data. That mean if you say
+                             <code>name: "fullName"</code>, it means this particular column will contain all the full names from 
+                             the data you have provided.
+                             
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                colModel: [ <br>
+                                    &nbsp { name: "fullName" } <br>
+                                    
+                                ]  // array 
+                            </code>
+                        </p>
+
+                        <!--Option: colModel - label -->
+                        <h5 id="label" class="spacer-t"><span class="hashtag-pink">#</span> label </h5>
+                        <p>
+                             This property lets you write the heading of the column. It appears in the first row at the top of the grid.                             
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                colModel: [ <br>
+                                    &nbsp { name: "fullName", label: "Full Name" } <br>
+                                    
+                                ]  
+                            </code>
+                        </p>
+
+                        <!--Option: colModel - width -->
+                        <h5 id="width" class="spacer-t"><span class="hashtag-pink">#</span> width </h5>
+                        <p>
+                             This property lets you set the <b>min-width</b> of an individual column.                             
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                colModel: [ <br>
+                                    &nbsp { name: "fullName", label: "Full Name", width: "200" } <br>
+                                    
+                                ] 
+                            </code>
+                        </p>
+
+                        <!--Option: colModel - colDataType -->
+                        <h5 id="colDataType" class="spacer-t"><span class="hashtag-pink">#</span> colDataType </h5>
+                        <p>
+                            This property lets you set the type of data that you want to display in that column. <br>
+                            There are 4 options for this property -
+                            <ul>
+                                <li><code>plainText</code></li>
+                                <li><code>number</code></li>
+                                <li><code>date</code></li>
+                                <li><code>form</code></li>
+                            </ul>      
+                            The default option is <i>plainText</i>                    
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                colModel: [ <br>
+                                    &nbsp { name: "fullName", label: "Full Name", width: "200", colDataType:"plainText" }, <br>
+                                    &nbsp { name: "age", label: "Age", width: "50", colDataType:"number" }, <br>
+                                    &nbsp { name: "dob", label: "Date of Birth", width: "150", colDataType:"date" }, <br>
+                                    
+                                ] 
+                            </code>
+                        </p>
+
+                        <!--Option: colModel - formInputType -->
+                        <h5 id="formInputType" class="spacer-t"><span class="hashtag-pink">#</span> formInputType </h5>
+                        <p>
+                            If your <code>colDataType</code> is <b>form</b> then you can set <code>formInputType</code> to specify 
+                            which kind of form element do you want to use. </br>
+                            Below are all the options available for this property -
+                            <ul>
+                                <li><code>text</code></li>
+                                <li><code>number</code></li>
+                                <li><code>radio</code></li>
+                                <li><code>checkbox</code></li>
+                                <li><code>password</code></li>
+                                <li><code>date</code></li>
+                                <li><code>time</code></li>
+                                <li><code>textarea</code></li>
+                                <li><code>select  (provide options using "selectOptions". See below.)</code></li>
+
+                            </ul>      
+                            The default input type is <i>text</i>                    
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                colModel: [ <br>
+                                    &nbsp { name: "fullName", label: "Full Name", width: "200", colDataType:"form", formInputType:"text" }, <br>
+                                    &nbsp { name: "fullName", label: "Full Name", width: "200", colDataType:"form", formInputType:"checkbox" }, <br>
+                                    &nbsp { name: "fullName", label: "Full Name", width: "200", colDataType:"form", formInputType:"date" }, <br>
+                                    
+                                    
+                                ] 
+                            </code>
+                        </p>
+                        
+
+                        <!--Option: colModel - selectOptions -->
+                        <h5 id="selectOptions" class="spacer-t"><span class="hashtag-pink">#</span> selectOptions </h5>
+                        <p>
+                            If your <code>formInputType</code> is <b>select</b> then you'll have to provide <code>selectOptions</code> to add 
+                            the options in the dropdown. <br>
+                            <code>selectOptions</code> accepts array of options.
+
+                             </br>
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                colModel: [ <br>
+                                    &nbsp { name: "gender", label: "Gender", width: "200", colDataType:"form", formInputType:"select", selectOptions:["Male", "Female","Others"] }, <br>
+                                  
+                                    
+                                ] 
+                            </code>
+                        </p>
+
+
+                        <!--Option: hidden-->
+                        <h5 id="hidden" class="spacer-t"><span class="hashtag-pink">#</span> hidden </h5>
+                        <p>
+                            This option is used to show or hide a column. 
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                colModel: [ <br>
+                                    &nbsp { name: "fullName", label: "Full Name", width: "200", hidden: true } <br>
+                                    
+                                ] 
+                            </code>
+                        </p>
+                        
+
+                        <!--Option: resizable-->
+                        <h5 id="resizable" class="spacer-t"><span class="hashtag-pink">#</span> resizable </h5>
+                        <p>
+                            This option make the given column resizable horizontally. That means, you can stretch the width of the column 
+                            using your mouse pointer if the resizable option is true for that column.
+                        </p>
+                        <p class="code-snippet">
+                            <code class="language-javascript">
+                                colModel: [ <br>
+                                    &nbsp { name: "fullName", label: "Full Name", width: "200", hidden: false, resizable: true } <br>
+                                    
+                                ] 
+                            </code>
+                        </p>
+
+
+                    </div> <!--End of Col-md-9 (right)-->
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--Footer-->
+        <footer>
+          <div class="footer">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <a href="#"><div>Home</div></a>            
+                </div>
+                <div class="col-md-2">
+                  <a href="#"><div>Documentation</div></a>            
+                </div>
+                <div class="col-md-2">
+                  <a href="#"><div>Version</div></a>            
+                </div>
+                <div class="col-md-2">
+                  <a href="#"><div>Help</div></a>            
+                </div>
+                <div class="col-md-4">
+                  <a href="#"><div><i class="fa-brands fa-github"></i></div></a>            
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <a href="#"><div class="go-to-top"><p><i class="fa-regular fa-circle-up"></i></p></div></a>
+    </div>
+
+      <script>
+        $(document).ready(function(){
+            $(".index-list").on("click","ul li a",function(){
+                $(".index-list ul li a").css("font-weight","400");
+               $(this).css("font-weight","600");
+
+               let divId = $(this).attr("data-sg-target");
+               hilightOption(divId);
+            })
+
+            function hilightOption(id){
+                let rep = 0;
+                setInterval(function(){
+                    if(rep === 6){
+                        clearInterval(id);
+                    }else{
+                        rep++;
+                        //setTimeout()
+                        $("#"+id).toggleClass("hilighted-option");
+                    }
+                },400);
+            }
+        })
+      </script>
+</body>
+</html>
+
